@@ -1,0 +1,33 @@
+.Popup-warning {
+  width: 400px;
+  margin: 0 auto;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+.Popup-warning .warningBox {
+  position: relative;
+}
+.Popup-warning .heading {
+  text-align: center;
+  font-size: 16px;
+  line-height: 130%;
+  font-family: BVNPro-SemiBold;
+  color: #222222;
+  display: block;
+  padding: 15px;
+  border-bottom: 1px solid #E7E7E7;
+}
+.Popup-warning .funcsBox {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+@media screen and (max-width: 780px) {
+  .Popup-warning {
+    width: calc(100% - 40px);
+  }
+}
+
+/*# sourceMappingURL=popup-switch.css.map */

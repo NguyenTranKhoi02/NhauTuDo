@@ -1,0 +1,440 @@
+@media (max-width: 768px) {
+  .table-booking .tb-row {
+    display: block !important;
+  }
+}
+.table-booking .tb-row .detail-tb {
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .table-booking .tb-row .detail-tb {
+    flex-direction: initial;
+  }
+}
+.table-booking .tb-row .detail-tb .item-desr {
+  width: 100%;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .table-booking .tb-row .detail-tb .item-desr {
+    order: 1;
+    border-bottom: 0.5px solid #eeeeee;
+    padding-bottom: 14px;
+  }
+}
+.table-booking .tb-row .detail-tb .item-desr.show-full .views {
+  display: none !important;
+}
+@media (max-width: 768px) {
+  .table-booking .tb-row .detail-tb .item-desr.show-full .desr {
+    width: 100%;
+    display: block !important;
+    overflow: initial;
+    text-overflow: initial;
+    -webkit-line-clamp: none;
+    display: -webkit-box;
+    -webkit-box-orient: inherit;
+  }
+}
+.table-booking .tb-row .detail-tb .desr {
+  display: block;
+  width: 100%;
+  font-family: Roboto-Medium;
+  font-weight: 400;
+  font-style: Italic;
+  font-size: 13px;
+  leading-trim: NONE;
+  line-height: 120%;
+  letter-spacing: 0px;
+  color: #846536;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .table-booking .tb-row .detail-tb .desr {
+    font-size: 12px;
+    display: inline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    width: calc(100% - 57px);
+    line-height: 20px;
+  }
+}
+.table-booking .tb-row .detail-tb .views {
+  display: none;
+}
+@media (max-width: 768px) {
+  .table-booking .tb-row .detail-tb .views {
+    display: inline-block;
+    font-family: Roboto-Medium;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 12px;
+    leading-trim: NONE;
+    line-height: 120%;
+    letter-spacing: 0px;
+    color: #7367f0;
+    position: absolute;
+    top: 3px;
+    right: 0;
+  }
+}
+.table-booking .list-hd {
+  justify-content: start;
+  gap: 12px;
+}
+.table-booking .list-hd .tb-hd:nth-child(1), .table-booking .list-hd .tb-hd:nth-child(2), .table-booking .list-hd .tb-hd:nth-child(3), .table-booking .list-hd .tb-hd:nth-child(4) {
+  width: 18%;
+}
+.table-booking .list-hd .tb-hd:last-child {
+  flex: 1;
+}
+.table-booking .table-content .user-number {
+  display: block;
+  font-family: Roboto-Medium;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 13px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: #555555;
+  margin-bottom: 8px;
+}
+@media (max-width: 768px) {
+  .table-booking .table-content .date-time-book {
+    font-size: 13px;
+  }
+}
+.table-booking .table-content .date-time-book .time-book {
+  color: #7367F0;
+}
+@media (max-width: 768px) {
+  .table-booking .table-content .date-time-book .time-book {
+    font-size: 13px;
+  }
+}
+@media (max-width: 768px) {
+  .table-booking .table-content .address-book {
+    font-size: 13px;
+  }
+}
+.table-booking .table-content .name-cus,
+.table-booking .table-content .phone-cus {
+  margin-bottom: 8px;
+}
+@media (max-width: 768px) {
+  .table-booking .table-content .name-cus,
+  .table-booking .table-content .phone-cus {
+    font-size: 13px;
+  }
+}
+.table-booking .table-content .info-cus {
+  padding-bottom: 0px;
+}
+.table-booking .table-content .extra-info {
+  position: initial;
+  display: block;
+  white-space: initial;
+}
+@media (max-width: 768px) {
+  .table-booking .table-content .extra-info {
+    padding-bottom: 0px;
+    border-bottom: 0;
+    font-size: 13px;
+  }
+}
+@media (max-width: 768px) {
+  .table-booking .table-content .extra-info .view-menu {
+    font-size: 13px;
+  }
+}
+.table-booking .table-content .detail-tb {
+  justify-content: start;
+  gap: 12px;
+}
+@media (max-width: 768px) {
+  .table-booking .table-content .detail-tb {
+    gap: 14px;
+  }
+}
+.table-booking .table-content .detail-tb .info-booking {
+  width: 18%;
+}
+@media (max-width: 768px) {
+  .table-booking .table-content .detail-tb .info-booking {
+    width: calc(50% - 7px);
+    border-bottom: 0;
+    padding-bottom: 0;
+    position: relative;
+  }
+}
+@media (max-width: 768px) {
+  .table-booking .table-content .detail-tb .info-booking:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-right: 0.5px solid #eeeeee;
+  }
+}
+.table-booking .table-content .detail-tb .info-cus {
+  width: 18%;
+}
+@media (max-width: 768px) {
+  .table-booking .table-content .detail-tb .info-cus {
+    width: calc(50% - 7px);
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+.table-booking .table-content .detail-tb .people {
+  width: 18%;
+  font-family: Roboto-Medium;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 13px;
+  leading-trim: NONE;
+  line-height: 120%;
+  letter-spacing: 0px;
+}
+@media (max-width: 768px) {
+  .table-booking .table-content .detail-tb .people {
+    width: 100%;
+    border-top: 0.5px solid #eeeeee;
+    padding: 14px 0;
+    font-size: 13px;
+    order: 1;
+  }
+}
+@media (max-width: 768px) {
+  .table-booking .table-content .detail-tb .people .bold {
+    font-weight: 600;
+  }
+}
+.table-booking .table-content .detail-tb .people.discount {
+  color: #BBBBBB;
+}
+.table-booking .table-content .detail-tb .funcs-book-group {
+  width: 18%;
+  align-items: start;
+}
+@media (max-width: 768px) {
+  .table-booking .table-content .detail-tb .funcs-book-group {
+    order: 2;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+    width: calc(50% - 6px);
+    gap: 0;
+  }
+}
+.table-booking .table-content .detail-tb .funcs-book-group.funcs-book-2 {
+  flex: 1;
+}
+@media (max-width: 768px) {
+  .table-booking .table-content .detail-tb .funcs-book-group.funcs-book-2 .select-booking-stt {
+    margin-right: 8px;
+  }
+}
+@media (max-width: 768px) {
+  .table-booking .table-content .detail-tb .funcs-book-group .select-booking-stt {
+    flex: 1;
+  }
+}
+@media (max-width: 768px) {
+  .table-booking .table-content .detail-tb .funcs-book-group .select-booking-stt .selected {
+    background: #fff;
+    padding: 5px;
+    height: auto;
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .table-booking .table-content .detail-tb .funcs-book-group .select-booking-stt .selected::after {
+    width: 10px;
+    height: 10px;
+    right: 6px;
+  }
+}
+@media (max-width: 768px) {
+  .table-booking .table-content .detail-tb .funcs-book-group .select-booking-stt .selected .icn {
+    margin-right: 8px;
+  }
+}
+@media (max-width: 768px) {
+  .table-booking .table-content .detail-tb .funcs-book-group .edit-btn {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .table-booking .table-content .detail-tb .funcs-book-group .btn-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+  }
+}
+@media (max-width: 768px) {
+  .table-booking .table-content .detail-tb .funcs-book-group .btn-group .btn {
+    padding: 5px;
+  }
+}
+@media (max-width: 768px) {
+  .table-booking .table-content .detail-tb .funcs-book-group .btn-group .btn svg {
+    position: relative;
+    right: 0px;
+  }
+}
+.table-booking .table-content .detail-tb .funcs-book-group .title {
+  display: none;
+  font-family: Roboto-Medium;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 11px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: #111111;
+}
+@media (max-width: 768px) {
+  .table-booking .table-content .detail-tb .funcs-book-group .title {
+    display: block;
+    width: 100%;
+  }
+}
+.table-booking .table-content .detail-tb .address-book {
+  font-family: Roboto-Medium;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 13px;
+  leading-trim: NONE;
+  line-height: 101%;
+  letter-spacing: 0px;
+}
+.table-booking .table-content .detail-tb .number-of-table {
+  display: flex;
+  gap: 3px;
+  margin-top: 8px;
+}
+.table-booking .table-content .detail-tb .number-of-table .tso {
+  font-family: Roboto-Medium;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 13px;
+  leading-trim: NONE;
+  line-height: 101%;
+  letter-spacing: 0px;
+  color: #555555;
+  margin: 0;
+}
+.table-booking .table-content .detail-tb .number-of-table .value {
+  font-family: Roboto-Medium;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 13px;
+  leading-trim: NONE;
+  line-height: 101%;
+  letter-spacing: 0px;
+  color: #bbbbbb;
+}
+.table-booking .table-content .detail-tb .number-of-table .value.yes {
+  color: #EA5455;
+}
+
+@media (max-width: 768px) {
+  .content-booking .table-booking .filter-box {
+    position: sticky;
+    top: 75px;
+    z-index: 9;
+  }
+}
+@media (max-width: 768px) {
+  .content-booking .funcs-head-booking .box-right {
+    order: -1;
+  }
+}
+@media (max-width: 768px) {
+  .content-booking .funcs-head-booking .box-right .btn {
+    padding: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .content-booking .funcs-head-booking .box-mid {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 768px) {
+  .content-booking .funcs-head-booking .box-mid .bh-seacrh {
+    width: 100%;
+    padding: 4px 1.1rem;
+  }
+}
+@media (max-width: 768px) {
+  .content-booking .funcs-head-booking .box-mid .vue-select-base-on-input,
+  .content-booking .funcs-head-booking .box-mid .form-date {
+    width: calc(50% - 6px);
+  }
+}
+@media (max-width: 768px) {
+  .content-booking .funcs-head-booking .box-mid .vue-date-picker-html {
+    width: calc(50% - 6px);
+  }
+}
+@media (max-width: 768px) {
+  .content-booking .funcs-head-booking .box-mid .form-date {
+    padding: 9px 15px;
+  }
+}
+
+.table-booking .table-content .detail-tb .people {
+  font-family: "Roboto-Regular";
+}
+
+.table-booking .tb-row .detail-tb .desr {
+  font-family: "Roboto-Regular";
+}
+
+.table-booking .detail-tb .date-time-book .time-book {
+  color: #7367F0;
+}
+
+.table-booking .detail-tb .view-menu {
+  font-family: "Roboto-Bold";
+}
+
+.table-code-color {
+  color: #EA5455 !important;
+}
+
+.table-booking .detail-tb .phone-cus {
+  font-family: Roboto-Medium;
+}
+
+.table-booking .detail-tb .address-book {
+  font-size: 13px;
+}
+
+.table-booking .table-content .detail-tb .number-of-table .value,
+.table-booking .table-content .detail-tb .number-of-table .tso {
+  font-family: "Roboto-Regular";
+}
+
+.table-booking .detail-tb .date-time-book {
+  margin-bottom: 5px;
+}
+
+.table-booking .detail-tb .address-book {
+  line-height: 120%;
+}
+
+.table-booking .detail-tb .name-cus {
+  font-family: "Roboto-Medium";
+}/*# sourceMappingURL=editkhoi.css.map */
