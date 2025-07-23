@@ -491,6 +491,8 @@
 }
 
 .page-calendar {
+  padding-bottom: 30px;
+
   .fc {
     background: #fff;
 
@@ -501,10 +503,41 @@
       border-right: 1px solid #e9eaec;
       margin-bottom: 0;
       padding: 24px 10px 24px 30px;
+      justify-content: start;
+
+      .fc-prev-button {
+        background: #fff !important;
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+
+        .fc-icon-chevron-left {
+          &:before {
+            color: #6c757d;
+          }
+        }
+      }
+
+      .fc-next-button {
+        background: #fff !important;
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+
+        .fc-icon-chevron-right {
+          &:before {
+            color: #6c757d;
+          }
+        }
+      }
 
       .fc-toolbar-chunk {
+        &:first-child {
+          order: -1;
+        }
+
         &:last-child {
-          display: none;
+          order: -1;
         }
 
         .fc-toolbar-title {
@@ -514,6 +547,7 @@
           font-style: normal;
           font-weight: 500;
           line-height: normal;
+          text-transform: capitalize;
         }
       }
     }
@@ -522,6 +556,192 @@
       .fc-scrollgrid {
         border-collapse: collapse;
         border: 1px solid #e9eaec;
+      }
+
+      .fc-scrollgrid {
+        .fc-scrollgrid-section {
+          .fc-daygrid-day {
+            &.fc-day-today {
+              background: rgba(115, 103, 240, 0.08);
+
+              .fc-daygrid-day-frame {
+                border: 1px solid #7367f0;
+                background: rgba(115, 103, 240, 0.08);
+              }
+            }
+
+            &.fc-day-other {
+              .fc-daygrid-day-top {
+                flex-direction: inherit;
+                color: #b9b9c3;
+                font-family: Roboto-Medium;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 21px; /* 150% */
+                opacity: 1;
+              }
+            }
+
+            &.special-day {
+              .fc-daygrid-day-number {
+                display: block;
+                color: #ea5455;
+                font-family: Roboto-Medium;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 21px; /* 150% */
+                padding: 0;
+              }
+            }
+
+            .fc-daygrid-day-bg {
+              .fc-highlight {
+                background: rgba(115, 103, 240, 0.08);
+              }
+            }
+
+            .fc-daygrid-day-events {
+              .fc-daygrid-event-harness {
+                .fc-daygrid-event {
+                  padding: 0px 10px 0px 8px;
+                  margin: 0;
+
+                  .fc-daygrid-event-dot {
+                    display: none;
+                  }
+
+                  .fc-event-title {
+                    display: block;
+                    color: #111;
+                    font-family: Roboto-Medium;
+                    font-size: 10px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 130%;
+                    flex-grow: initial;
+                    flex-shrink: initial;
+                    min-width: initial;
+                    overflow: inherit;
+                    white-space: initial;
+                  }
+                }
+              }
+
+              .custom-injected-text {
+                padding: 0px 10px 0px 8px;
+                display: block;
+                color: #111;
+                font-family: Roboto-Medium;
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130%;
+                flex-grow: initial;
+                flex-shrink: initial;
+                min-width: initial;
+                overflow: inherit;
+                white-space: initial;
+              }
+            }
+
+            .fc-daygrid-day-top {
+              flex-direction: inherit;
+              padding: 5px 10px 3px 8px;
+              color: #6e6b7b;
+              font-family: Roboto-Medium;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 21px; /* 150% */
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.modal {
+  .form-menu {
+    margin-right: 22px;
+    padding: 22px 0 22px 30px;
+
+    .card {
+      margin-bottom: 0;
+      box-shadow: none;
+
+      .card-header {
+        padding: 0;
+        display: block;
+        margin-bottom: 25px;
+
+        .flex-header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .left {
+            .address {
+              display: block;
+              margin-bottom: 5px;
+              color: #555;
+              font-feature-settings: "liga" off, "clig" off;
+              font-family: Roboto-Medium;
+              font-size: 15px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 100%; /* 15px */
+            }
+
+            .date {
+              display: block;
+              color: #111;
+              font-feature-settings: "liga" off, "clig" off;
+              font-family: Roboto-Medium;
+              font-size: 19px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 100%;
+            }
+          }
+        }
+      }
+
+      .form-check {
+        margin-right: 0;
+
+        .form-check-input {
+          filter: drop-shadow(0px 1.8px 3.6px #7367f0);
+          margin-top: -1px;
+        }
+
+        .form-check-label {
+          display: block;
+          color: #111;
+          font-feature-settings: "liga" off, "clig" off;
+          font-family: Roboto-Medium;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 500;
+          padding-left: 8px;
+          line-height: 100%; /* 15px */
+        }
+      }
+
+      .card-body {
+        padding: 0;
+
+        .demo-inline-spacing {
+          gap: 20px;
+
+          .form-check {
+            margin: 0;
+            padding-left: 22px;
+            width: calc(16.666% - 17px);
+          }
+        }
       }
     }
   }

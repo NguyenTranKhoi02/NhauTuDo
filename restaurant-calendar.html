@@ -19,8 +19,9 @@
     <link rel="stylesheet" type="text/css" href="css/colors.css">
     <link rel="stylesheet" type="text/css" href="css/components.css">
     <link rel="stylesheet" type="text/css" href="css/icons.css">
-    <link rel="stylesheet" type="text/css" href="css/fullcalendar.min.css">
-    <link rel="stylesheet" type="text/css" href="css/app-calendar.css">
+
+    <!-- FullCalendar CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.7.2/main.min.css" rel="stylesheet" />
 
 
     <!-- BEGIN: Page CSS-->
@@ -261,8 +262,106 @@
                             <div class="modal-body pb-4">
                                 <div class="d-flex">
                                     <div class="form-menu">
-                                        HTML của Khôi sẽ ở đây nhé, hàm callback khi click vào lịch để bật popup là:
-                                        showModalPopupTimeSlot();
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <div class="flex-header">
+                                                    <div class="left">
+                                                        <span class="address">
+                                                            86 Hồng Tiến
+                                                        </span>
+
+                                                        <span class="date">
+                                                            Ngày 25/7/2025
+                                                        </span>
+                                                    </div>
+
+                                                    <div class="right">
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="inlineCheckbox1" value="checked" checked="">
+                                                            <label class="form-check-label"
+                                                                for="inlineCheckbox1">Chọn tất cả</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="demo-inline-spacing">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="inlineCheckbox1" value="checked" checked="">
+                                                        <label class="form-check-label"
+                                                            for="inlineCheckbox1">9:30</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="inlineCheckbox2" value="unchecked">
+                                                        <label class="form-check-label"
+                                                            for="inlineCheckbox2">9:30</label>
+                                                    </div>
+                                                       <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="inlineCheckbox1" value="checked" checked="">
+                                                        <label class="form-check-label"
+                                                            for="inlineCheckbox1">9:30</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="inlineCheckbox2" value="unchecked">
+                                                        <label class="form-check-label"
+                                                            for="inlineCheckbox2">9:30</label>
+                                                    </div>
+                                                       <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="inlineCheckbox1" value="checked" checked="">
+                                                        <label class="form-check-label"
+                                                            for="inlineCheckbox1">9:30</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="inlineCheckbox2" value="unchecked">
+                                                        <label class="form-check-label"
+                                                            for="inlineCheckbox2">9:30</label>
+                                                    </div>
+                                                       <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="inlineCheckbox1" value="checked" checked="">
+                                                        <label class="form-check-label"
+                                                            for="inlineCheckbox1">9:30</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="inlineCheckbox2" value="unchecked">
+                                                        <label class="form-check-label"
+                                                            for="inlineCheckbox2">9:30</label>
+                                                    </div>
+                                                       <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="inlineCheckbox1" value="checked" checked="">
+                                                        <label class="form-check-label"
+                                                            for="inlineCheckbox1">9:30</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="inlineCheckbox2" value="unchecked">
+                                                        <label class="form-check-label"
+                                                            for="inlineCheckbox2">9:30</label>
+                                                    </div>
+                                                       <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="inlineCheckbox1" value="checked" checked="">
+                                                        <label class="form-check-label"
+                                                            for="inlineCheckbox1">9:30</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="inlineCheckbox2" value="unchecked">
+                                                        <label class="form-check-label"
+                                                            for="inlineCheckbox2">9:30</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="logs-edit">
                                         <h5 class="mb-2">Lịch sử chỉnh sửa</h5>
@@ -360,9 +459,10 @@
     <script src="js/app.js"></script>
     <script src="js/customizer.min.js"></script>
     <script src="js/components-modal.js"></script>
-    <script src="js/fullcalendar.min.js"></script>
-    <script src="js/app-calendar.js"></script>
-    <script src="js/app-calendar-events.js"></script>
+
+    <!-- FullCalendar JS -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.7.2/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.7.2/locales-all.min.js"></script>
 
     <!-- END: Theme JS-->
 
@@ -370,9 +470,123 @@
     <!-- END: Page JS-->
 
     <script>
-        // function showModalPopupTimeSlot() {
-        //     $('#popupSlotTime').modal('show');
-        // }
+        function showModalPopupTimeSlot() {
+            $('#popupSlotTime').modal('show');
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const specialDays = {
+                '01-01': 'Tết Dương lịch',
+                '10-02': 'Tết Nguyên đán 2024',
+                '11-02': 'Mùng 2 Tết',
+                '12-02': 'Mùng 3 Tết',
+                '13-02': 'Mùng 4 Tết',
+                '14-02': 'Mùng 5 Tết',
+                '30-04': 'Giải phóng miền Nam',
+                '01-05': 'Quốc tế Lao động',
+                '02-09': 'Quốc khánh',
+                '24-12': 'Giáng sinh'
+            };
+
+            var calendarEl = document.getElementById('calendar');
+
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                locale: 'vi',
+                headerToolbar: {
+                    left: 'prev',
+                    center: 'title',
+                    right: 'next'
+                },
+                dayHeaderContent: function (arg) {
+                    const dayMap = ['CN', 'T2', 'T3', 'T4', 'T5', 'T6', 'T7'];
+                    return dayMap[arg.date.getDay()];
+                },
+                showNonCurrentDates: true,
+                fixedWeekCount: false,
+                selectable: true,
+
+                dayCellDidMount: function (info) {
+                    const date = info.date;
+                    const dd = String(date.getDate()).padStart(2, '0');
+                    const mm = String(date.getMonth() + 1).padStart(2, '0');
+                    const key = `${dd}-${mm}`;
+                    if (specialDays[key]) {
+                        info.el.classList.add('special-day');
+                        info.el.setAttribute('title', specialDays[key]);
+
+                        const eventsEl = info.el.querySelector('.fc-daygrid-day-events');
+                        if (eventsEl) {
+                            const customDiv = document.createElement('div');
+                            customDiv.className = 'custom-injected-text';
+                            customDiv.innerText = specialDays[key];
+                            eventsEl.appendChild(customDiv);
+                        }
+                    }
+                },
+
+                // ✅ Rút gọn tiêu đề lịch từ "tháng 7 năm 2025" -> "Tháng 7 / 2025"
+                datesSet: function () {
+                    const headerTitle = document.querySelector('.fc-toolbar-title');
+                    if (headerTitle) {
+                        const currentText = headerTitle.textContent;
+                        const match = currentText.match(/tháng\s+(\d+)\s+năm\s+(\d{4})/i);
+                        if (match) {
+                            headerTitle.textContent = `Tháng ${match[1]}/${match[2]}`;
+                        }
+                    }
+                },
+
+                events: [
+                    {
+                        title: '10:00, 11:30',
+                        start: '2025-07-14',
+                        display: 'list-item',
+                    },
+                    {
+                        title: '10:00, 11:30, 15:00, 19:00, 20:00, 21:30',
+                        start: '2025-07-26',
+                        display: 'list-item',
+                    }
+                ],
+                dateClick: function (info) {
+                    const clickedDate = info.date;
+                    const formatted = clickedDate.toLocaleDateString('vi-VN');
+                    console.log("Ngày được click:", formatted);
+                }
+            });
+
+            calendar.render();
+
+            // ✅ Hàm thêm text vào bất kỳ ngày nào
+            function addCustomTextToDate(targetDate, text) {
+                const allDayEls = document.querySelectorAll('.fc-daygrid-day');
+
+                allDayEls.forEach(dayEl => {
+                    const dateStr = dayEl.getAttribute('data-date');
+                    if (!dateStr) return;
+
+                    const currentDate = new Date(dateStr);
+                    if (
+                        currentDate.getFullYear() === targetDate.getFullYear() &&
+                        currentDate.getMonth() === targetDate.getMonth() &&
+                        currentDate.getDate() === targetDate.getDate()
+                    ) {
+                        const eventsEl = dayEl.querySelector('.fc-daygrid-day-events');
+                        if (eventsEl) {
+                            const customDiv = document.createElement('div');
+                            customDiv.className = 'custom-injected-text';
+                            customDiv.innerText = text;
+                            eventsEl.appendChild(customDiv);
+                        }
+                    }
+                });
+            }
+
+            // ✅ Ví dụ bắn thêm đoạn text:
+            addCustomTextToDate(new Date('2025-08-15'), 'Sinh nhật mẹ');
+            addCustomTextToDate(new Date('2025-07-26'), 'Chạy deadline!');
+        });
 
     </script>
 
