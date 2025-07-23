@@ -109,7 +109,7 @@
   }
 }
 .table-booking .table-content .date-time-book .time-book {
-  color: #7367F0;
+  color: #7367f0;
 }
 @media (max-width: 768px) {
   .table-booking .table-content .date-time-book .time-book {
@@ -217,7 +217,7 @@
   }
 }
 .table-booking .table-content .detail-tb .people.discount {
-  color: #BBBBBB;
+  color: #bbbbbb;
 }
 .table-booking .table-content .detail-tb .funcs-book-group {
   width: 18%;
@@ -343,7 +343,7 @@
   color: #bbbbbb;
 }
 .table-booking .table-content .detail-tb .number-of-table .value.yes {
-  color: #EA5455;
+  color: #ea5455;
 }
 
 @media (max-width: 768px) {
@@ -403,7 +403,7 @@
 }
 
 .table-booking .detail-tb .date-time-book .time-book {
-  color: #7367F0;
+  color: #7367f0;
 }
 
 .table-booking .detail-tb .view-menu {
@@ -411,7 +411,7 @@
 }
 
 .table-code-color {
-  color: #EA5455 !important;
+  color: #ea5455 !important;
 }
 
 .table-booking .detail-tb .phone-cus {
@@ -437,4 +437,31 @@
 
 .table-booking .detail-tb .name-cus {
   font-family: "Roboto-Medium";
+}
+
+.page-calendar .fc {
+  background: #fff;
+}
+.page-calendar .fc .fc-toolbar {
+  border-radius: 0px 6px 0px 0px;
+  border-top: 1px solid #e9eaec;
+  border-left: 1px solid #e9eaec;
+  border-right: 1px solid #e9eaec;
+  margin-bottom: 0;
+  padding: 24px 10px 24px 30px;
+}
+.page-calendar .fc .fc-toolbar .fc-toolbar-chunk:last-child {
+  display: none;
+}
+.page-calendar .fc .fc-toolbar .fc-toolbar-chunk .fc-toolbar-title {
+  color: #5e5873;
+  font-family: Roboto-Medium;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.page-calendar .fc .fc-view-harness .fc-scrollgrid {
+  border-collapse: collapse;
+  border: 1px solid #e9eaec;
 }/*# sourceMappingURL=editkhoi.css.map */

@@ -27,7 +27,6 @@
           }
 
           .desr {
-
             @media (max-width: 768px) {
               width: 100%;
               display: block !important;
@@ -93,7 +92,6 @@
     gap: 12px;
 
     .tb-hd {
-
       &:nth-child(1),
       &:nth-child(2),
       &:nth-child(3),
@@ -127,7 +125,7 @@
       }
 
       .time-book {
-        color: #7367F0;
+        color: #7367f0;
 
         @media (max-width: 768px) {
           font-size: 13px;
@@ -238,7 +236,7 @@
         }
 
         &.discount {
-          color: #BBBBBB;
+          color: #bbbbbb;
         }
       }
 
@@ -378,7 +376,7 @@
           color: #bbbbbb;
 
           &.yes {
-            color: #EA5455;
+            color: #ea5455;
           }
         }
       }
@@ -441,7 +439,6 @@
       .form-date {
         @media (max-width: 768px) {
           padding: 9px 15px;
-
         }
       }
     }
@@ -449,24 +446,23 @@
 }
 
 .table-booking .table-content .detail-tb .people {
-
-  font-family: 'Roboto-Regular';
+  font-family: "Roboto-Regular";
 }
 
 .table-booking .tb-row .detail-tb .desr {
-  font-family: 'Roboto-Regular';
+  font-family: "Roboto-Regular";
 }
 
 .table-booking .detail-tb .date-time-book .time-book {
-  color: #7367F0;
+  color: #7367f0;
 }
 
 .table-booking .detail-tb .view-menu {
-  font-family: 'Roboto-Bold';
+  font-family: "Roboto-Bold";
 }
 
 .table-code-color {
-  color: #EA5455 !important;
+  color: #ea5455 !important;
 }
 
 .table-booking .detail-tb .phone-cus {
@@ -479,7 +475,7 @@
 
 .table-booking .table-content .detail-tb .number-of-table .value,
 .table-booking .table-content .detail-tb .number-of-table .tso {
-  font-family: 'Roboto-Regular';
+  font-family: "Roboto-Regular";
 }
 
 .table-booking .detail-tb .date-time-book {
@@ -491,5 +487,42 @@
 }
 
 .table-booking .detail-tb .name-cus {
-  font-family: 'Roboto-Medium';
+  font-family: "Roboto-Medium";
+}
+
+.page-calendar {
+  .fc {
+    background: #fff;
+
+    .fc-toolbar {
+      border-radius: 0px 6px 0px 0px;
+      border-top: 1px solid #e9eaec;
+      border-left: 1px solid #e9eaec;
+      border-right: 1px solid #e9eaec;
+      margin-bottom: 0;
+      padding: 24px 10px 24px 30px;
+
+      .fc-toolbar-chunk {
+        &:last-child {
+          display: none;
+        }
+
+        .fc-toolbar-title {
+          color: #5e5873;
+          font-family: Roboto-Medium;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+      }
+    }
+
+    .fc-view-harness {
+      .fc-scrollgrid {
+        border-collapse: collapse;
+        border: 1px solid #e9eaec;
+      }
+    }
+  }
 }
