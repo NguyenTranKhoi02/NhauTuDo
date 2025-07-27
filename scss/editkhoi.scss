@@ -92,6 +92,7 @@
     gap: 12px;
 
     .tb-hd {
+
       &:nth-child(1),
       &:nth-child(2),
       &:nth-child(3),
@@ -561,6 +562,7 @@
       .fc-scrollgrid {
         .fc-scrollgrid-section {
           .fc-daygrid-day {
+
             &.fc-day-today {
               background: rgba(115, 103, 240, 0.08);
 
@@ -578,7 +580,8 @@
                 font-size: 14px;
                 font-style: normal;
                 font-weight: 400;
-                line-height: 21px; /* 150% */
+                line-height: 21px;
+                /* 150% */
                 opacity: 1;
               }
             }
@@ -591,10 +594,13 @@
                 font-size: 14px;
                 font-style: normal;
                 font-weight: 600;
-                line-height: 21px; /* 150% */
+                line-height: 21px;
+                /* 150% */
                 padding: 0;
               }
             }
+
+            .fc-daygrid-day-frame {}
 
             .fc-daygrid-day-bg {
               .fc-highlight {
@@ -654,7 +660,8 @@
               font-size: 14px;
               font-style: normal;
               font-weight: 400;
-              line-height: 21px; /* 150% */
+              line-height: 21px;
+              /* 150% */
             }
           }
         }
@@ -692,7 +699,8 @@
               font-size: 15px;
               font-style: normal;
               font-weight: 500;
-              line-height: 100%; /* 15px */
+              line-height: 100%;
+              /* 15px */
             }
 
             .date {
@@ -714,7 +722,9 @@
 
         .form-check-input {
           filter: drop-shadow(0px 1.8px 3.6px #7367f0);
-          margin-top: -1px;
+          margin-top: -2px;
+          width: 18px;
+          height: 18px;
         }
 
         .form-check-label {
@@ -726,7 +736,8 @@
           font-style: normal;
           font-weight: 500;
           padding-left: 8px;
-          line-height: 100%; /* 15px */
+          line-height: 100%;
+          /* 15px */
         }
       }
 
@@ -745,4 +756,17 @@
       }
     }
   }
+}
+
+.modal .form-menu .card .card-body .demo-inline-spacing .form-check {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.modal .form-menu .card .form-check .form-check-label {
+  padding-left: 7px;
+}
+
+.fc .fc-daygrid-day-frame {
+  cursor: pointer;
 }

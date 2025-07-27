@@ -505,7 +505,8 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 21px; /* 150% */
+  line-height: 21px;
+  /* 150% */
   opacity: 1;
 }
 .page-calendar .fc .fc-view-harness .fc-scrollgrid .fc-scrollgrid-section .fc-daygrid-day.special-day .fc-daygrid-day-number {
@@ -515,7 +516,8 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
-  line-height: 21px; /* 150% */
+  line-height: 21px;
+  /* 150% */
   padding: 0;
 }
 .page-calendar .fc .fc-view-harness .fc-scrollgrid .fc-scrollgrid-section .fc-daygrid-day .fc-daygrid-day-bg .fc-highlight {
@@ -565,7 +567,8 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 21px; /* 150% */
+  line-height: 21px;
+  /* 150% */
 }
 
 .modal .form-menu {
@@ -595,7 +598,8 @@
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
-  line-height: 100%; /* 15px */
+  line-height: 100%;
+  /* 15px */
 }
 .modal .form-menu .card .card-header .flex-header .left .date {
   display: block;
@@ -612,7 +616,9 @@
 }
 .modal .form-menu .card .form-check .form-check-input {
   filter: drop-shadow(0px 1.8px 3.6px #7367f0);
-  margin-top: -1px;
+  margin-top: -2px;
+  width: 18px;
+  height: 18px;
 }
 .modal .form-menu .card .form-check .form-check-label {
   display: block;
@@ -623,7 +629,8 @@
   font-style: normal;
   font-weight: 500;
   padding-left: 8px;
-  line-height: 100%; /* 15px */
+  line-height: 100%;
+  /* 15px */
 }
 .modal .form-menu .card .card-body {
   padding: 0;
@@ -635,4 +642,17 @@
   margin: 0;
   padding-left: 22px;
   width: calc(16.666% - 17px);
+}
+
+.modal .form-menu .card .card-body .demo-inline-spacing .form-check {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.modal .form-menu .card .form-check .form-check-label {
+  padding-left: 7px;
+}
+
+.fc .fc-daygrid-day-frame {
+  cursor: pointer;
 }/*# sourceMappingURL=editkhoi.css.map */
