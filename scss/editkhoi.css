@@ -1,3 +1,28 @@
+.img-resize {
+  display: block;
+  position: relative;
+  height: -moz-max-content;
+  height: max-content;
+}
+.img-resize:before {
+  padding-bottom: 62.5%;
+  content: "";
+  display: block;
+}
+.img-resize img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  margin: auto;
+  background-size: cover;
+  background-position: center;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 @media (max-width: 768px) {
   .table-booking .tb-row {
     display: block !important;
@@ -740,7 +765,7 @@
 }
 .box-photoslide .box-slide-defoult .list-add .box-item {
   width: calc(20% - 8px);
-  height: 55px;
+  height: 75px;
 }
 .box-photoslide .box-slide-defoult .list-add .box-item .item-add {
   border-radius: 5px;
@@ -757,6 +782,9 @@
   width: 100%;
   height: 100%;
   position: relative;
+}
+.box-photoslide .box-slide-defoult .list-add .box-item .images-fd:before {
+  padding-bottom: 100%;
 }
 .box-photoslide .box-slide-defoult .list-add .box-item .images-fd img {
   border-radius: 5px;
