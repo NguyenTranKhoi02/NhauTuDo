@@ -1,0 +1,73 @@
+.Popup-warning {
+  width: 400px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  /* Pop-up Shadow */
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+
+  .warningBox {
+    position: relative;
+    padding: 38px 40px;
+  }
+
+  .heading {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    /* or 27px */
+    text-align: center;
+    font-family: PlusJaS-SemiBold;
+    color: #222222;
+    margin-bottom: 30px;
+  }
+
+  .funcsBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
+  }
+
+  .confirm-btn {
+    font-size: 15px;
+    line-height: 19px;
+    /* identical to box height */
+    padding: 12px 22px;
+    text-align: center;
+    text-transform: uppercase;
+    background: #333333;
+    border-radius: 40px;
+    color: #FFFFFF;
+    display: flex;
+    font-family: PlusJaS-SemiBold;
+
+  }
+
+  .cancel-btn {
+    font-size: 15px;
+    line-height: 120%;
+    font-family: PlusJaS-SemiBold;
+    display: block;
+    color: #1B4E30;
+
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .Popup-warning {
+    width: calc(100% - 40px);
+  }
+}
+
+.popup-warning-active {
+  &.popup-active {
+    .Popup-warning {
+      vertical-align: middle;
+    }
+    .fancybox-bg {
+      background: rgba(0, 0, 0, 0.95);
+    }
+  }
+}

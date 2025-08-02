@@ -1,0 +1,14 @@
+.demo-img {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: block;
+}
+.demo-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/*# sourceMappingURL=demo-home.css.map */

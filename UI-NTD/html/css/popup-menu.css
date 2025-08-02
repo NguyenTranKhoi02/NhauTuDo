@@ -1,0 +1,194 @@
+.PopUp-menu {
+  background: #fff;
+}
+.PopUp-menu .popup-menu-content {
+  width: 550px;
+  max-width: 100%;
+}
+.PopUp-menu .menu-popup__content {
+  background: #FFFFFF;
+  border-radius: 5px 5px 0px 0px;
+  overflow: hidden;
+}
+.PopUp-menu .heading {
+  background: #FFA827;
+  border-radius: 5px 5px 0px 0px;
+  padding: 25px 22px;
+  display: flex;
+  align-items: center;
+}
+.PopUp-menu .heading .text {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.PopUp-menu .heading .text .icn {
+  width: 32px;
+}
+.PopUp-menu .heading .text .txt {
+  font-size: 38px;
+  line-height: 110%;
+  font-family: TiltWarp-Regular;
+  letter-spacing: -0.02em;
+  color: #222222;
+}
+.PopUp-menu .heading .save-btn {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  gap: 10px;
+  margin-right: 21px;
+}
+.PopUp-menu .heading .save-btn .icn {
+  width: 16px;
+  display: block;
+}
+.PopUp-menu .heading .save-btn .txt {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: PlusJaS-SemiBold;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  color: #222222;
+}
+.PopUp-menu .heading .close-popup {
+  width: 32px;
+  display: block;
+  cursor: pointer;
+}
+.PopUp-menu .total-menu {
+  padding: 15px 25px 25px;
+  position: relative;
+}
+.PopUp-menu .price-total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.PopUp-menu .price-total .txt {
+  font-size: 22px;
+  line-height: 110%;
+  font-family: PlusJaS-Bold;
+  letter-spacing: -0.02em;
+  color: #1B4E30;
+}
+.PopUp-menu .price-total .numb {
+  font-size: 18px;
+  line-height: 110%;
+  /* identical to box height, or 20px */
+  font-family: PlusJaS-Bold;
+  text-align: right;
+  letter-spacing: -0.02em;
+  color: #1B4E30;
+}
+.PopUp-menu .note {
+  font-size: 11px;
+  line-height: 140%;
+  font-family: PlusJaS-Italic;
+  color: #666666;
+  z-index: 1;
+  position: relative;
+}
+.PopUp-menu .list-food-add {
+  margin-bottom: 200px;
+}
+.PopUp-menu .list-food-add li {
+  border-bottom: 0.7px dashed #DFDFDF;
+}
+.PopUp-menu .food-item {
+  display: flex;
+  padding: 20px 0px;
+  align-items: center;
+  gap: 30px;
+}
+.PopUp-menu .info-food {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  flex-grow: 1;
+}
+.PopUp-menu .info-food .name {
+  font-size: 15px;
+  line-height: 120%;
+  font-family: PlusJaS-Medium;
+  color: #222222;
+}
+.PopUp-menu .info-food .price-ori {
+  font-size: 12px;
+  line-height: 100%;
+  font-family: PlusJaS-SemiBold;
+  color: #999999;
+}
+.PopUp-menu .quantity {
+  flex-shrink: 0;
+}
+.PopUp-menu .price-after {
+  width: 90px;
+  flex-shrink: 0;
+  font-size: 14px;
+  line-height: 100%;
+  font-family: PlusJaS-Medium;
+  text-align: right;
+  color: #1B4E30;
+}
+.PopUp-menu .remove-food {
+  flex-shrink: 0;
+  width: 10px;
+  display: block;
+  margin-left: 10px;
+}
+.PopUp-menu .remove-btn {
+  top: 68px;
+  right: 25px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  z-index: 2;
+}
+.PopUp-menu .remove-btn .icn {
+  width: 10px;
+  display: block;
+}
+.PopUp-menu .remove-btn .txt {
+  font-size: 13px;
+  line-height: 16px;
+  font-family: PlusJaS-Medium;
+  color: #222222;
+  display: block;
+}
+.PopUp-menu .booking-box {
+  display: flex;
+  flex-direction: column;
+}
+.PopUp-menu .bookingPopup {
+  background: #FFA827;
+  border-radius: 48px;
+  padding: 12px 22px;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  line-height: 19px;
+  /* identical to box height */
+  font-family: PlusJaS-SemiBold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #222222;
+}
+.PopUp-menu .note-call {
+  font-size: 18px;
+  line-height: 110%;
+  text-align: center;
+  color: #777777;
+}
+.PopUp-menu .note-call a {
+  color: #1B4E30;
+  font-family: PlusJaS-SemiBold;
+}
+
+/*# sourceMappingURL=popup-menu.css.map */

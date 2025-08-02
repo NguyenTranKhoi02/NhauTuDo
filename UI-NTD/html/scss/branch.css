@@ -1,0 +1,506 @@
+.branch-web {
+  display: flex;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+.branch-web .branch-left {
+  flex-shrink: 0;
+  width: 356px;
+  background: #FFA827;
+  border-radius: 10px 0px 0px 10px;
+  padding: 23px 0 23px 32px;
+  height: auto;
+}
+.branch-web .branch-left .count-branch {
+  font-size: 54px;
+  line-height: 68px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  font-family: TiltWarp-Regular;
+  color: #222222;
+  margin-bottom: 5px;
+}
+.branch-web .branch-left .des {
+  font-size: 14px;
+  line-height: 130%;
+  font-family: PlusJaS-Medium;
+  color: #603A03;
+  margin-bottom: 23px;
+}
+.branch-web .branch-left .list-filter-branch .branch-filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px 16px 0;
+  border-bottom: 1px solid #E79E32;
+  opacity: 0.5;
+}
+.branch-web .branch-left .list-filter-branch .branch-filter:hover, .branch-web .branch-left .list-filter-branch .branch-filter.active {
+  opacity: 1;
+}
+.branch-web .branch-left .list-filter-branch .name {
+  flex-grow: 1;
+  font-size: 20px;
+  line-height: 100%;
+  font-family: PlusJaS-SemiBold;
+  color: #222222;
+  display: block;
+}
+.branch-web .branch-left .list-filter-branch .count {
+  font-size: 14px;
+  line-height: 100%;
+  font-family: PlusJaS-SemiBold;
+  color: #222222;
+  display: block;
+}
+.branch-web .content-right {
+  flex-grow: 1;
+  max-height: 549px;
+  overflow: hidden;
+  background: #FFFFFF;
+  border-radius: 0 10px 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0 0 0 37px;
+  box-sizing: border-box;
+}
+.branch-web .content-right .content-tab {
+  overflow-y: scroll;
+  height: 100%;
+  padding: 30px 0;
+  box-sizing: border-box;
+  display: none;
+}
+.branch-web .content-right .content-tab.active {
+  display: block;
+}
+.branch-web .content-right .content-tab::-webkit-scrollbar {
+  width: 4px;
+}
+.branch-web .content-right .content-tab::-webkit-scrollbar-track {
+  background: none;
+}
+.branch-web .content-right .content-tab::-webkit-scrollbar-thumb {
+  background-color: #CACACA;
+}
+.branch-web .content-right .near-distant {
+  padding-top: 15px;
+}
+.branch-web .content-right .branch-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.branch-web .content-right .branch-box + .branch-box {
+  margin-top: 30px;
+}
+.branch-web .content-right .label-branch {
+  font-size: 18px;
+  line-height: 100%;
+  font-family: PlusJaS-Bold;
+  text-transform: uppercase;
+  color: #222222;
+}
+.branch-web .content-right .branch-info {
+  padding-top: 12px;
+  padding-bottom: 22px;
+  padding-right: 33px;
+  display: flex;
+  border-bottom: 0.7px solid #DFDFDF;
+  gap: 16px;
+}
+.branch-web .content-right .branch-info .thumb {
+  flex-shrink: 0;
+  position: relative;
+  width: 99px;
+  height: 99px;
+  overflow: hidden;
+  border-radius: 3px;
+}
+.branch-web .content-right .branch-info .thumb img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+.branch-web .content-right .branch-info .thumb .status {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  z-index: 2;
+  background: linear-gradient(37.14deg, #000000 0%, rgba(0, 0, 0, 0) 61.5%);
+  border-radius: 3px;
+  padding: 9px 10px;
+  box-sizing: border-box;
+  font-size: 11px;
+  line-height: 100%;
+  font-family: PlusJaS-SemiBold;
+  color: #FFFFFF;
+  gap: 5px;
+}
+.branch-web .content-right .branch-info .thumb .status.open .dot {
+  background: #23C446;
+}
+.branch-web .content-right .branch-info .thumb .status.closed .dot {
+  background: #FF3A3A;
+}
+.branch-web .content-right .branch-info .thumb .status.full .dot {
+  background: #F87C37;
+}
+.branch-web .content-right .branch-info .thumb .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: block;
+}
+.branch-web .content-right .branch-info .branch-total {
+  flex-grow: 1;
+}
+.branch-web .content-right .branch-info .loca {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 13px;
+}
+.branch-web .content-right .branch-info .loca .icn {
+  width: 20px;
+  display: block;
+}
+.branch-web .content-right .branch-info .loca .txt {
+  font-size: 18px;
+  line-height: 100%;
+  font-family: PlusJaS-SemiBold;
+  color: #222222;
+  display: block;
+}
+.branch-web .content-right .branch-info .type-gr {
+  padding-left: 26px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 15px;
+  line-height: 150%;
+  font-family: PlusJaS-Medium;
+  color: #666666;
+  margin-bottom: 6px;
+}
+.branch-web .content-right .branch-info .info-type {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+.branch-web .content-right .branch-info .info-type .icn {
+  width: 12px;
+  display: block;
+}
+.branch-web .content-right .branch-info .info-type .txt {
+  font-size: 13px;
+  display: block;
+}
+.branch-web .content-right .branch-info .note {
+  flex-grow: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.branch-web .content-right .branch-info .funcsBox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 8px;
+}
+.branch-web .content-right .branch-info .funcsBox a {
+  background: #F5F5F5;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 40px;
+  font-size: 13px;
+  line-height: 100%;
+  font-family: PlusJaS-SemiBold;
+  text-align: center;
+  color: #1B4E30;
+  transition: 0.15s ease;
+}
+.branch-web .content-right .branch-info .funcsBox a.disableOrder {
+  opacity: 0.4;
+  cursor: default;
+  color: #555;
+}
+.branch-web .content-right .branch-info .funcsBox a.disableOrder:hover {
+  color: #1B4E30;
+  background: #F5F5F5;
+}
+.branch-web .content-right .branch-info .funcsBox a:hover {
+  background: var(--colorPrimary);
+  color: #fff;
+}
+
+.branch-mob {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .branch-web {
+    display: none;
+  }
+  .branch-mob {
+    margin-top: 45px;
+    display: block;
+  }
+  .branch-mob .heading {
+    background: #FFA827;
+    border-radius: 10px 10px 0px 0px;
+    font-size: 30px;
+    line-height: 38px;
+    /* identical to box height */
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #222222;
+    padding: 7px 20px 5px;
+    font-family: TiltWarp-Regular;
+  }
+  .branch-mob .near-by {
+    padding: 15px 20px 20px;
+    background: #F5F5F5;
+  }
+  .branch-mob .near-by .branch-nbl {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .branch-mob .head-text {
+    font-size: 14px;
+    line-height: 100%;
+    font-family: PlusJaS-Bold;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    color: #222222;
+  }
+  .branch-mob .branch-info {
+    padding: 15px;
+    gap: 10px;
+    display: flex;
+    background: #FFFFFF;
+    border: 1px solid #E9E9E9;
+    border-radius: 10px;
+    flex-wrap: wrap;
+  }
+  .branch-mob .branch-info .thumb {
+    flex-shrink: 0;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 3px;
+  }
+  .branch-mob .branch-info .thumb img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+  .branch-mob .branch-info .thumb .status {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    z-index: 2;
+    background: linear-gradient(37.14deg, #000000 0%, rgba(0, 0, 0, 0) 61.5%);
+    border-radius: 3px;
+    padding: 6px;
+    box-sizing: border-box;
+    font-size: 8px;
+    line-height: 100%;
+    font-family: PlusJaS-SemiBold;
+    color: #FFFFFF;
+    gap: 5px;
+  }
+  .branch-mob .branch-info .thumb .status.open .dot {
+    background: #23C446;
+  }
+  .branch-mob .branch-info .thumb .status.closed .dot {
+    background: #FF3A3A;
+  }
+  .branch-mob .branch-info .thumb .status.full .dot {
+    background: #F87C37;
+  }
+  .branch-mob .branch-info .thumb .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    display: block;
+  }
+  .branch-mob .branch-info .branch-total {
+    width: calc(100% - 80px);
+  }
+  .branch-mob .branch-info .loca {
+    margin-bottom: 10px;
+    display: block;
+  }
+  .branch-mob .branch-info .loca .icn {
+    display: none;
+  }
+  .branch-mob .branch-info .loca .txt {
+    font-size: 15px;
+    line-height: 100%;
+    font-family: PlusJaS-SemiBold;
+    color: #222222;
+    display: block;
+  }
+  .branch-mob .branch-info .type-gr {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 11px;
+    line-height: 150%;
+    font-family: PlusJaS-Medium;
+    color: #666666;
+    margin-bottom: 10px;
+  }
+  .branch-mob .branch-info .info-type {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+  }
+  .branch-mob .branch-info .info-type .icn {
+    width: 12px;
+    display: block;
+  }
+  .branch-mob .branch-info .info-type .txt {
+    font-size: 11px;
+    display: block;
+  }
+  .branch-mob .branch-info .note {
+    flex-grow: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 13px;
+    line-height: 150%;
+    font-family: PlusJaS-Medium;
+  }
+  .branch-mob .branch-info .funcsBox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 8px;
+    width: 100%;
+  }
+  .branch-mob .branch-info .funcsBox a {
+    background: #F5F5F5;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+    font-size: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    line-height: 100%;
+    font-family: PlusJaS-SemiBold;
+    text-align: center;
+    color: #1B4E30;
+    transition: 0.15s ease;
+  }
+  .branch-mob .branch-info .funcsBox a.disableOrder {
+    opacity: 0.4;
+    cursor: default;
+    color: #555;
+  }
+  .branch-mob .branch-info .funcsBox a.disableOrder:hover {
+    color: #1B4E30;
+    background: #F5F5F5;
+  }
+  .branch-mob .branch-info .funcsBox a:hover {
+    background: var(--colorPrimary);
+    color: var(--colorYellow);
+  }
+  .branch-mob .branch-toggleBox {
+    max-height: 44px;
+    box-sizing: border-box;
+    transition: 0.3s ease;
+    overflow: hidden;
+    border-top: 1px solid #E9E9E9;
+  }
+  .branch-mob .branch-toggleBox.active {
+    max-height: 500px;
+  }
+  .branch-mob .branch-toggleBox.active .district-toggle .arrow {
+    transform: rotate(90deg);
+  }
+  .branch-mob .district-toggle {
+    height: 44px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    padding: 0 10px 0 20px;
+    background: #FFFFFF;
+  }
+  .branch-mob .district-toggle .name {
+    font-size: 14px;
+    line-height: 100%;
+    font-family: PlusJaS-Bold;
+    display: block;
+    text-transform: uppercase;
+    color: #222222;
+    flex-grow: 1;
+  }
+  .branch-mob .district-toggle .count {
+    width: 20px;
+    flex-shrink: 0;
+    font-size: 14px;
+    line-height: 100%;
+    font-family: PlusJaS-Medium;
+    display: block;
+    text-align: right;
+    color: #1B4E30;
+  }
+  .branch-mob .district-toggle .arrow {
+    width: 10px;
+    display: block;
+  }
+  .branch-mob .branch-list {
+    padding: 15px 0;
+    background: #F5F5F5;
+  }
+  .branch-mob .swiper-container.one-child .swiper-slide {
+    width: 100%;
+    padding: 0 19px;
+    box-sizing: border-box;
+  }
+  .branch-mob .swiper-container.one-child .swiper-slide:nth-child(1) {
+    margin-left: 0;
+  }
+  .branch-mob .swiper-container.one-child .swiper-slide:nth-last-child(1) {
+    margin-right: 0;
+  }
+  .branch-mob .swiper-container .swiper-slide {
+    width: 320px;
+    margin-left: 10px;
+  }
+  .branch-mob .swiper-container .swiper-slide:nth-child(1) {
+    margin-left: 19px;
+  }
+  .branch-mob .swiper-container .swiper-slide:nth-last-child(1) {
+    margin-right: 19px;
+  }
+}/*# sourceMappingURL=branch.css.map */

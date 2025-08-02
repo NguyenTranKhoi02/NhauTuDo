@@ -1,0 +1,96 @@
+@charset "utf-8";
+//Components
+@import "reset";
+@import "colors";
+@import "mixins";
+@import "commons";
+@import "fonts";
+@import "food";
+@import "popup-detail";
+@import "popup-switch";
+@import "branch";
+@import "popup-menufood";
+@import "animate";
+
+//Layout
+@import "header";
+@import "footer";
+@import "contact";
+@import "menu-list";
+@import "coso";
+@import "coso-detail";
+@import "news";
+@import "booking";
+@import "home";
+@import "404";
+
+.td-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  transition: .15s;
+
+  &.bcs-wrapper {
+    padding-top: 0;
+  }
+
+  &.active-noti {
+    padding-top: 36px;
+
+    .td-header {
+      top: 36px;
+    }
+
+    .tagBox {
+      top: 120px;
+    }
+
+    .noti-page {
+      top: -36px;
+    }
+  }
+}
+
+.td-content__wrapper {
+  margin-bottom: auto;
+}
+
+.widthCT {
+  max-width: 100%;
+  width: 1115px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.fancybox-active .popup-active {
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+body.popup-active {
+  height: 100vh;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .td-wrapper {
+    padding-top: 60px;
+
+    &.active-noti {
+      padding-top: 112px;
+
+      .td-header {
+        top: 52px;
+      }
+
+      .tagBox {
+        top: 112px;
+      }
+
+      .noti-page {
+        top: -52px;
+      }
+    }
+  }
+}

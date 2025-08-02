@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quán Nhậu Tự Do</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/init.js"></script>
+    <script>
+        $(document).ready(function () {
+            App.initHelpers(['foodPopup']);
+        });
+    </script>
+</head>
+<body>
+<div class="td-wrapper ">
+    <a href="javascript:;" class="popupFood">
+        OPEN POPUP
+    </a>
+</div>
+
+<div class="PopUp-detail" id="popup-detail-atc" style="display:none;">
+    <div class="popup-detailfood-content">
+
+
+        <div class="content-pop">
+            <a href="javascript:;" data-fancybox-close class="close-popup">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="16" cy="16" r="15.1" fill="white" stroke="black" stroke-width="1.8"/>
+                    <path d="M20.6666 11.3333L11.3333 20.6667" stroke="black" stroke-width="1.8" stroke-miterlimit="10"
+                          stroke-linecap="square"/>
+                    <path d="M20.6666 20.6667L11.3333 11.3333" stroke="black" stroke-width="1.8" stroke-miterlimit="10"
+                          stroke-linecap="square"/>
+                </svg>
+            </a>
+            <div class="galleryBox">
+                <div class="swiper-container swiper-gallery">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="images-food loading-food">
+                                <i style="background-image: url('img/slide-img-food.jpg')"></i>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="images-food">
+                                <i style="background-image: url('img/slide-img-food.jpg')"></i>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="images-food">
+                                <i style="background-image: url('img/slide-img-food.jpg')"></i>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="images-food">
+                                <i style="background-image: url('img/slide-img-food.jpg')"></i>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="images-food">
+                                <i style="background-image: url('img/slide-img-food.jpg')"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="paginationBox">
+                    <div class="icon">
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 3.75H0.625C0.25 3.75 0 4 0 4.375V9.375C0 9.75 0.25 10 0.625 10H5C5.375 10 5.625 9.75 5.625 9.375V4.375C5.625 4 5.375 3.75 5 3.75Z"
+                                  fill="white"/>
+                            <path d="M6.875 1.875H1.875V3.125H6.25V8.125H7.5V2.5C7.5 2.125 7.25 1.875 6.875 1.875Z"
+                                  fill="white"/>
+                            <path d="M8.75 0H3.75V1.25H8.125V6.25H9.375V0.625C9.375 0.25 9.125 0 8.75 0Z" fill="white"/>
+                        </svg>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="food-info">
+                <div class="name">
+                    Mề gà thiết bản
+                </div>
+                <div class="flexBox jc-sb al-ct">
+                    <div class="priceBox">
+                        <div class="current-price">320.000đ</div>
+                        <div class="original-price">820.000</div>
+                    </div>
+                    <div class="quantity">
+                        <div class="number-order">
+                            <div class="minus">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17 11.5H7C6.447 11.5 6 11.947 6 12.5C6 13.053 6.447 13.5 7 13.5H17C17.553 13.5 18 13.053 18 12.5C18 11.947 17.553 11.5 17 11.5Z"
+                                          fill="#666666"/>
+                                </svg>
+
+                            </div>
+                            <input type="number" value="1"/>
+                            <div class="plus">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17 11.5H13V7.5C13 6.947 12.553 6.5 12 6.5C11.447 6.5 11 6.947 11 7.5V11.5H7C6.447 11.5 6 11.947 6 12.5C6 13.053 6.447 13.5 7 13.5H11V17.5C11 18.053 11.447 18.5 12 18.5C12.553 18.5 13 18.053 13 17.5V13.5H17C17.553 13.5 18 13.053 18 12.5C18 11.947 17.553 11.5 17 11.5Z"
+                                          fill="#666666"/>
+                                </svg>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sapo">
+                    Một phần miến hải sản nhà Bếp Hoa thường đầy đặn đến nỗi 2 - 3 người ăn no luôn đó ạ. Bếp có 2 vị
+                    miến
+                    trộn sốt Thái và miến xào Một phần miến hải sản nhà Bếp Hoa thường đầy đặn đến nỗi 2 - 3 người ăn no
+                    luôn đó ạ. Bếp có 2 vị miến trộn sốt Thái và miến xào
+                </div>
+            </div>
+
+        </div>
+        <div class="funcsFixed">
+
+            <a href="javascript:;" data-fancybox-close class="atc-btn">
+                <span class="icn">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="11" cy="11" r="11" fill="white"/>
+                        <g clip-path="url(#clip0_139_1884)">
+                            <path d="M15.4917 10.3584H11.6417V6.50837C11.6417 6.12337 11.385 5.8667 11 5.8667C10.615 5.8667 10.3584 6.12337 10.3584 6.50837V10.3584H6.50837C6.12337 10.3584 5.8667 10.615 5.8667 11C5.8667 11.385 6.12337 11.6417 6.50837 11.6417H10.3584V15.4917C10.3584 15.8767 10.615 16.1334 11 16.1334C11.385 16.1334 11.6417 15.8767 11.6417 15.4917V11.6417H15.4917C15.8767 11.6417 16.1334 11.385 16.1334 11C16.1334 10.615 15.8767 10.3584 15.4917 10.3584Z"
+                                  fill="#1B4E30"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_139_1884">
+                                <rect width="10.2667" height="10.2667" fill="white"
+                                      transform="translate(5.8667 5.8667)"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                </span>
+                <span class="txt">đặt MÓN</span>
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

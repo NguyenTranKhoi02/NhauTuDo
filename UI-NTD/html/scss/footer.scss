@@ -1,0 +1,249 @@
+.td-footer {
+  background: #0F361F;
+  padding: 0 30px;
+  position: relative;
+  z-index: 11;
+  .footer-content {
+    width: 1400px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    padding: 35px 0;
+    gap: 108px;
+    position: relative;
+  }
+
+  .scrollTop {
+    position: absolute;
+    top: -24px;
+    right: -5px;
+    display: block;
+    width: 48px;
+  }
+
+  .footer-left {
+    display: flex;
+    flex-shrink: 0;
+    gap: 90px;
+  }
+
+  .if-left {
+
+  }
+
+  .td-logo {
+    width: 250px;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .bookingPopup {
+    margin-left: 53px;
+    border: 2px solid #FFA827;
+    border-radius: 10px;
+    font-size: 15px;
+    line-height: 19px;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    flex-shrink: 0;
+    background: transparent;
+    padding: 12px 22px;
+    transition: 0.15s ease;
+    font-family: PlusJaS-SemiBold;
+    box-sizing: border-box;
+
+    &:hover {
+      background: var(--colorYellow);
+      color: var(--colorPrimary);
+    }
+  }
+
+  .list-nav {
+
+  }
+
+  .link-nav {
+    font-size: 14px;
+    line-height: 220%;
+    font-family: PlusJaS-Medium;
+    color: #FFFFFF;
+
+    &:hover {
+      color: var(--colorYellow);
+    }
+  }
+
+  .footer-right {
+    padding-top: 10px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .infoBox {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .type {
+    font-size: 14px;
+    line-height: 150%;
+    font-family: PlusJaS-Medium;
+    display: block;
+    color: #FFFFFF;
+  }
+
+  .type-text {
+    font-size: 14px;
+    line-height: 150%;
+    font-family: PlusJaS-Medium;
+    display: block;
+    color: #FFA827;
+  }
+
+  .creBox {
+
+  }
+
+  .list-social {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 13px;
+  }
+
+  .social-link {
+    display: block;
+    width: 32px;
+
+    &.fb {
+      background-image: url('../web_images/icn-fb.svg');
+    }
+
+    &.tiktok {
+      background-image: url('../web_images/icn-tiktok.svg');
+    }
+
+    &.yt {
+      background-image: url('../web_images/icn-yt.svg');
+    }
+
+    &.ig {
+      background-image: url('../web_images/icn-ig.svg');
+    }
+
+    &.twt {
+      background-image: url('../web_images/icn-yt.svg');
+    }
+
+    .icn {
+      display: block;
+      width: 32px;
+      height: 32px;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+
+    }
+  }
+
+  .credit {
+    font-size: 14px;
+    line-height: 150%;
+    font-family: PlusJaS-Medium;
+    display: block;
+    color: #FFFFFF;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .td-footer {
+
+    padding: 0 20px;
+
+    .footer-content {
+      padding: 30px 0;
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    .scrollTop {
+      display: none;
+    }
+
+    .footer-left {
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    .if-left {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    .td-logo {
+      width: 180px;
+      margin-bottom: 0;
+    }
+
+    .bookingPopup {
+      margin-top: 2px;
+      font-size: 12px;
+      line-height: 15px;
+      margin-left: auto;
+      border: 1px solid #FFA827;
+      padding: 6px 10px;
+      border-radius: 5px;
+    }
+
+    .list-nav {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding-bottom: 21px;
+      border-bottom: 1px solid #1B4E30;
+    }
+
+    .link-nav {
+
+    }
+
+    .footer-right {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .infoBox {
+
+    }
+
+    .type {
+
+    }
+
+    .type-text {
+
+    }
+
+    .creBox {
+
+    }
+
+    .list-social {
+      margin-bottom: 25px;
+    }
+
+    .social-link {
+
+      .icn {
+
+
+      }
+    }
+
+    .credit {
+      font-size: 12px;
+    }
+  }
+}

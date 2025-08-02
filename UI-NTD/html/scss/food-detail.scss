@@ -1,0 +1,395 @@
+.food-detail {
+  &__wrapper {
+    padding-top: 20px;
+    padding-bottom: 80px;
+  }
+
+  &__flexbox {
+    display: flex;
+    gap: 60px;
+    padding-bottom: 30px;
+    border-bottom: 0.7px solid #DFDFDF;
+
+    .sidebar {
+      width: 320px;
+      box-sizing: border-box;
+      position: relative;
+
+      .bner-cta {
+        display: block;
+        position: sticky;
+        top: 150px;
+
+
+        img {
+          width: 100%;
+          display: block;
+          border-radius: 10px;
+
+        }
+      }
+    }
+  }
+
+  &__content {
+    width: 735px;
+    max-width: 100%;
+
+    .galleryBox {
+      margin-bottom: 20px;
+      flex-shrink: 0;
+      position: relative;
+      z-index: 1;
+      padding-top: 35.66%;
+
+      .images-food {
+        position: relative;
+        display: block;
+        cursor: grab;
+        @include img-border-gallery();
+
+        &:before {
+          border-radius: 10px;
+        }
+
+        &.loading-food {
+          &:after {
+            content: '';
+            position: absolute;
+            z-index: 99999;
+            top: calc((100% - 2rem) / 2);
+            left: calc((100% - 2rem) / 2);
+            display: inline-block;
+            width: 1rem;
+            height: 1rem;
+            vertical-align: -0.125em;
+            border: 0.15em solid var(--colorPrimary);
+            border-right-color: transparent;
+            border-radius: 50%;
+            animation: 0.75s linear infinite spinner-border;
+          }
+
+          i {
+            opacity: 0;
+            transition: opacity .5s ease;
+          }
+        }
+
+        i {
+          border-radius: 10px;
+          transition: opacity .5s ease;
+          width: 100%;
+          padding-top: 35.66%;
+          @include bg-thumb;
+        }
+      }
+    }
+
+    .swiper-gallery {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      border-radius: 10px;
+
+    }
+
+    .paginationBox {
+      position: absolute;
+      display: inline-flex;
+      align-items: center;
+      left: 20px;
+      bottom: 11px;
+      padding: 6px 10px;
+      background: rgba(0, 0, 0, 0.82);
+      backdrop-filter: blur(30px);
+      border-radius: 29px;
+      z-index: 3;
+
+      .icon {
+        width: 10px;
+        display: block;
+        margin-right: 7px;
+      }
+
+      .swiper-pagination {
+        position: relative;
+        width: auto;
+        bottom: auto;
+        left: auto;
+        display: flex;
+        align-items: center;
+        font-size: 11px;
+        line-height: 100%;
+        color: #FFFFFF;
+        font-family: 'PlusJaS-Medium';
+
+        span {
+          width: 8px;
+        }
+      }
+    }
+
+    .number-order {
+      display: flex;
+      background: #FFFFFF;
+      border: 1px solid #E2E2E2;
+      border-radius: 3px;
+
+      .minus, .plus {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        svg {
+          width: 24px;
+        }
+      }
+
+      input {
+        width: 46px;
+        height: auto;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        background: none;
+        border-left: 1px solid #E2E2E2;
+        border-right: 1px solid #E2E2E2;
+        border-top: 0;
+        border-bottom: 0;
+        font-size: 14px;
+        line-height: 120%;
+        font-family: PlusJaS-Medium;
+        color: #666666;
+
+      }
+    }
+
+    .funcsRight {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .name {
+      font-size: 22px;
+      line-height: 130%;
+      /* or 25px */
+      padding-right: 55px;
+      color: #222222;
+      font-family: PlusJaS-SemiBold;
+    }
+
+    .note-food {
+      font-size: 16px;
+      line-height: 130%;
+      font-family: PlusJaS-Medium;
+      color: #B5292F;
+      margin-top: 7px;
+      margin-bottom: 10px;
+    }
+
+    .priceBox {
+      display: flex;
+      align-items: center;
+
+      .current-price {
+        font-size: 15px;
+        line-height: 130%;
+        font-family: PlusJaS-SemiBold;
+        color: #1B4E30;
+      }
+
+      .original-price {
+        font-size: 11px;
+        font-family: PlusJaS-Regular;
+        text-decoration-line: line-through;
+        margin-left: 11px;
+        color: #999999;
+      }
+    }
+
+    .content {
+      margin-top: 20px;
+      padding-top: 15px;
+      border-top: 0.7px dashed #DFDFDF;
+
+    }
+
+    .sapo {
+
+      position: relative;
+      font-size: 16px;
+      line-height: 140%;
+      font-family: PlusJaS-Regular;
+      color: #222222;
+    }
+
+    .atc-btn {
+
+      display: inline-flex;
+      width: 123px;
+      height: 42px;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border-radius: 34px;
+      background: var(--colorPrimary);
+
+      .icn {
+        width: 22px;
+        display: block;
+      }
+
+      .txt {
+        display: block;
+        text-transform: uppercase;
+        font-size: 15px;
+        line-height: 19px;
+        font-family: PlusJaS-SemiBold;
+        color: #FFFFFF;
+      }
+    }
+  }
+
+
+}
+
+@media screen and (max-width: 768px) {
+  .food-detail {
+    &__wrapper {
+      padding-top: 15px;
+    }
+
+    &__flexbox {
+      flex-direction: column;
+      gap: 20px;
+
+      .sidebar {
+        width: 100%;
+        padding: 0 20px;
+      }
+    }
+
+    &__content {
+
+
+      .galleryBox {
+        margin: 0;
+
+        .images-food {
+          &:before {
+            border-radius: 0;
+            border-left: 0;
+            border-right: 0;
+          }
+
+          i {
+            border-radius: 0;
+          }
+        }
+      }
+
+      .swiper-gallery {
+        border-radius: 0;
+      }
+
+      .paginationBox {
+
+
+        .icon {
+
+        }
+
+        .swiper-pagination {
+
+
+          span {
+
+          }
+        }
+      }
+
+      .food-info {
+
+        padding: 15px 20px;
+      }
+
+      .number-order {
+
+
+        .minus, .plus {
+
+        }
+
+        input {
+
+        }
+      }
+
+      .funcsRight {
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .flexBox.al-ct {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .name {
+        margin-bottom: 7px;
+        font-size: 19px;
+        padding: 0;
+      }
+
+      .note-food {
+
+      }
+
+      .priceBox {
+
+        margin-bottom: 7px;
+
+        .current-price {
+
+        }
+
+        .original-price {
+
+        }
+      }
+
+      .content {
+        margin-top: 15px;
+
+      }
+
+      .sapo {
+        line-height: 160%;
+        margin-top: 15px;
+
+      }
+
+      .atc-btn {
+        width: 106px;
+        height: 36px;
+
+        .icn {
+
+        }
+
+        .txt {
+          font-size: 13px;
+          line-height: 16px;
+        }
+      }
+    }
+
+
+  }
+}
