@@ -683,50 +683,39 @@
 }
 
 .box-photoslide {
-  border-radius: 5px;
-  border: 1px solid #efefef;
-  background: #fff;
-  margin-top: 25px;
+  padding: 0 20px;
 }
-.box-photoslide .box-photo-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
-  border-bottom: 1px solid #efefef;
-}
-.box-photoslide .box-photo-top .title {
-  color: #111;
-  font-feature-settings: "liga" off, "clig" off;
-  font-family: Roboto-Medium;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 100%;
-  margin-bottom: 0;
-}
-.box-photoslide .box-photo-top .box-right {
-  display: flex;
-  gap: 14px;
-  align-items: center;
-}
-.box-photoslide .box-photo-top .box-right .btn-add {
+.box-photoslide .box-photo-top .add-photo {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 10px 12px;
   border-radius: 999px;
-  background: #7367f0;
-  width: 28px;
-  height: 28px;
-  cursor: pointer;
+  background: #7367F0;
+  color: #FFF;
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Roboto-Medium;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 15px auto;
 }
-.box-photoslide .box-photo-top .box-right .drop {
-  display: inline-flex;
-  cursor: pointer;
+.box-photoslide .box-photo-top .add-photo .icon {
+  display: flex;
+  position: relative;
+  top: -1px;
 }
 .box-photoslide .box-slide-defoult {
-  padding: 15px 20px;
-  border-bottom: 1px solid #efefef;
+  border-radius: 5px;
+  border: 1px solid #EFEFEF;
+  background: #FFF;
+  margin-bottom: 15px;
+  padding: 15px 20px 10px 20px;
 }
 .box-photoslide .box-slide-defoult.slider-images {
   border-bottom: 0;
@@ -764,8 +753,8 @@
   margin-bottom: 12px;
 }
 .box-photoslide .box-slide-defoult .list-add .box-item {
-  width: calc(20% - 8px);
-  height: 75px;
+  width: calc(16.66% - 9px);
+  height: 50px;
 }
 .box-photoslide .box-slide-defoult .list-add .box-item .item-add {
   border-radius: 5px;
@@ -838,7 +827,8 @@
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
-  line-height: 100%; /* 13px */
+  line-height: 100%;
+  /* 13px */
 }
 .box-photoslide .box-slide-defoult .form-input .form-control::-moz-placeholder {
   opacity: 0.4;
@@ -869,7 +859,8 @@
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
-  line-height: 100%; /* 13px */
+  line-height: 100%;
+  /* 13px */
   -webkit-line-clamp: 1;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -888,4 +879,73 @@
   font-style: normal;
   font-weight: 500;
   line-height: 100%;
+}
+.box-photoslide .box-slide-defoult .flex-btn-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 15px;
+}
+.box-photoslide .box-slide-defoult .flex-btn-bottom .btn-close {
+  display: flex;
+  height: auto !important;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  border-radius: 5px;
+  background: #BBB;
+  color: #FFF;
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Roboto-Medium;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  /* 15px */
+}
+.box-photoslide .box-slide-defoult .flex-btn-bottom .btn-confirm {
+  display: flex;
+  height: auto !important;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  border-radius: 5px;
+  background: #7367F0;
+  color: #FFF;
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Roboto-Medium;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  /* 15px */
+}
+
+.modal-slide .modal-dialog {
+  max-width: 450px;
+}
+.modal-slide .modal-header {
+  justify-content: center;
+}
+.modal-slide .modal-header::before {
+  display: none;
+}
+.modal-slide .modal-header .modal-title {
+  color: #111;
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Roboto-Medium;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  flex: 1;
+}
+.modal-slide .modal-body {
+  background: #F8F8F8;
 }/*# sourceMappingURL=editkhoi.css.map */
