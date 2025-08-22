@@ -1,6 +1,9 @@
 .box-csdcb-images-caption {
   position: relative;
 }
+.box-csdcb-images-caption .caption-images-sw {
+  overflow: hidden;
+}
 .box-csdcb-images-caption .caption-images-sw-next {
   background: rgba(255, 255, 255, 0.6);
   -webkit-backdrop-filter: blur(10px);
@@ -51,7 +54,7 @@
   width: -moz-max-content;
   width: max-content;
   font-family: "PlusJaS-Regular";
-  color: #FFF;
+  color: #fff;
   leading-trim: both;
   text-edge: cap;
   font-size: 15px;
@@ -73,7 +76,7 @@
   }
 }
 .box-csdcb-images-caption .desr-caption {
-  background: #F1F1F1 !important;
+  background: #f1f1f1 !important;
   color: #444 !important;
   font-size: 13px !important;
   font-style: italic !important;
