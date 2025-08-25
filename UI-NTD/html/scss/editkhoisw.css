@@ -1,6 +1,13 @@
 .box-csdcb-images-caption {
   position: relative;
 }
+@media (max-width: 768px) {
+  .box-csdcb-images-caption {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    margin-bottom: 20px;
+  }
+}
 .box-csdcb-images-caption .caption-images-sw {
   overflow: hidden;
 }
