@@ -129,4 +129,10 @@
   -o-object-fit: cover;
      object-fit: cover;
   z-index: 3;
+}
+@media (max-width: 768px) {
+  .box-csdcb-images-caption .box-item-caption .images-main img {
+    -o-object-fit: contain !important;
+       object-fit: contain !important;
+  }
 }/*# sourceMappingURL=editkhoisw.css.map */

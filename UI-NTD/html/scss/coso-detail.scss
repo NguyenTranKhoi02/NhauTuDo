@@ -3,15 +3,15 @@ html {
 }
 
 .cosoDetail-wrapper {
-  background: #F8F8F8;
+  background: #f8f8f8;
 }
 
 .cosoDetail-content {
   padding: 20px 0;
 
   .csdc-wrapper {
-    background: #FFFFFF;
-    border: 1px solid #EFEFEF;
+    background: #ffffff;
+    border: 1px solid #efefef;
     border-radius: 10px;
     position: relative;
     overflow: hidden;
@@ -76,19 +76,19 @@ html {
             .action-link-item {
               &.disableOrder {
                 .action-link {
-                  background: #F5F5F5;
+                  background: #f5f5f5;
                   cursor: default;
 
                   .icn {
                     svg {
                       path {
-                        fill: #CECECE;
+                        fill: #cecece;
                       }
                     }
                   }
 
                   .txt {
-                    color: #CECECE;
+                    color: #cecece;
                   }
                 }
               }
@@ -101,7 +101,7 @@ html {
           line-height: 110%;
           font-family: "TiltWarp-Regular";
           letter-spacing: -0.02em;
-          color: #1B4E30;
+          color: #1b4e30;
           margin-bottom: 15px;
         }
 
@@ -152,22 +152,22 @@ html {
               font-family: "PlusJaS-Bold";
               text-align: center;
               text-transform: uppercase;
-              color: #FFFFFF;
+              color: #ffffff;
               padding: 4px 7px;
               box-sizing: border-box;
               border-radius: 25px;
             }
 
             .noti-green {
-              background: #23C346;
+              background: #23c346;
             }
 
             .noti-red {
-              background: #FF3A3A;
+              background: #ff3a3a;
             }
 
             .noti-orange {
-              background: #F87C37;
+              background: #f87c37;
             }
           }
 
@@ -197,7 +197,7 @@ html {
             flex-direction: column;
             align-items: start;
             width: 120px;
-            border-right: 1px solid #E1E1E1;
+            border-right: 1px solid #e1e1e1;
             padding-left: 20px;
 
             &:first-child {
@@ -239,7 +239,7 @@ html {
               padding: 15px 35px;
               height: 50px;
               box-sizing: border-box;
-              background: #F5F5F5;
+              background: #f5f5f5;
               border-radius: 5px;
               transition: 0.25s ease;
 
@@ -268,7 +268,7 @@ html {
               .txt {
                 font-size: 16px;
                 line-height: 100%;
-                color: #1B4E30;
+                color: #1b4e30;
                 font-family: "PlusJaS-SemiBold";
               }
             }
@@ -484,8 +484,8 @@ html {
       .csdcb-toc {
         display: flex;
         flex-direction: column;
-        background: #FFFBF4;
-        border: 0.5px solid #C7C7C7;
+        background: #fffbf4;
+        border: 0.5px solid #c7c7c7;
         border-radius: 10px;
         margin-bottom: 30px;
         transition: 0.4s ease;
@@ -509,8 +509,8 @@ html {
         }
 
         .toc-header {
-          background: #FFFFFF;
-          border-bottom: 0.5px solid #C7C7C7;
+          background: #ffffff;
+          border-bottom: 0.5px solid #c7c7c7;
           display: flex;
           justify-content: space-between;
           align-items: center;
@@ -563,7 +563,7 @@ html {
 
               &::before {
                 position: absolute;
-                content: '';
+                content: "";
                 top: 10px;
                 left: 6px;
                 width: 4px;
@@ -612,7 +612,6 @@ html {
           line-height: 170%;
           color: #333333;
           font-family: "PlusJaS-Italic";
-
         }
 
         a {
@@ -620,7 +619,7 @@ html {
           line-height: 170%;
           margin-bottom: 15px;
           font-family: "PlusJaS-SemiBold";
-          color: #21A256;
+          color: #21a256;
         }
 
         h2 {
@@ -640,7 +639,7 @@ html {
         }
 
         hr {
-          border: 1px solid #DFDFDF;
+          border: 1px solid #dfdfdf;
           margin: 15px 0;
         }
 
@@ -730,7 +729,7 @@ html {
           .thumb-txt {
             padding: 8px 10px;
             box-sizing: border-box;
-            background: #F1F1F1;
+            background: #f1f1f1;
             font-size: 13px;
             line-height: 150%;
             font-family: "PlusJaS-Italic";
@@ -757,7 +756,7 @@ html {
 
             &::before {
               position: absolute;
-              content: '';
+              content: "";
               top: 12px;
               left: 8px;
               width: 3px;
@@ -776,7 +775,7 @@ html {
     justify-content: space-between;
     padding: 40px;
     box-sizing: border-box;
-    background: #1B4E30;
+    background: #1b4e30;
     border-radius: 10px;
     margin-bottom: 30px;
 
@@ -798,7 +797,7 @@ html {
       .title {
         font-size: 28px;
         line-height: 140%;
-        color: #FFFFFF;
+        color: #ffffff;
         font-family: "PlusJaS-SemiBold";
         margin-bottom: 10px;
       }
@@ -812,7 +811,7 @@ html {
           line-height: 18px;
           text-align: center;
           text-transform: uppercase;
-          color: #FFFFFF;
+          color: #ffffff;
           font-family: "PlusJaS-SemiBold";
           margin-right: 12px;
         }
@@ -823,7 +822,7 @@ html {
           font-family: "TiltWarp-Regular";
           text-align: center;
           text-transform: uppercase;
-          color: #FFA827;
+          color: #ffa827;
         }
       }
     }
@@ -837,19 +836,19 @@ html {
 
         &:hover {
           a {
-            background: #FFA827;
-            color: #1B4E30;
+            background: #ffa827;
+            color: #1b4e30;
           }
         }
 
         a {
-          border: 2px solid #FFA827;
+          border: 2px solid #ffa827;
           border-radius: 10px;
           padding: 17px 47px;
           font-size: 20px;
           line-height: 25px;
           text-transform: uppercase;
-          color: #FFFFFF;
+          color: #ffffff;
           font-family: "PlusJaS-SemiBold";
           transition: 0.15s ease;
         }
